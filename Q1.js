@@ -6,5 +6,9 @@ process.stdin.on('end', () => {stdin = stdin.split("\n");stdin.reverse();main()}
 prompt = () => stdin.pop();
 
 function main() {
-    // Enter your code here
+    var guests = parseInt(prompt());
+
+    let total = 200 + (guests * 8);
+
+    console.log(total);
 }
